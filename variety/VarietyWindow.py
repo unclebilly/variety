@@ -1895,8 +1895,8 @@ class VarietyWindow(Gtk.Window):
                     except Exception:
                         logger.warning(lambda: "Could not delete %s, no worries" % file)
 
-            if Util.compare_versions(last_version, "0.8.0") < 0:
-                logger.info(lambda: "Performing upgrade to 0.8.0")
+            if Util.compare_versions(last_version, "0.7.3-pre") < 0:
+                logger.info(lambda: "Performing upgrade to 0.7.3")
                 options = Options()
                 options.read()
                 for source in options.sources:
